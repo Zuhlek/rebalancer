@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Rebalancing Rechner</h1>
+    <p>Definiere alle deinen Positionen in der Tabelle. </p>
+    <div>
+        <label>Neuinvestition</label>
+        <input type="text" id="new_investment">
+    </div>
+    <div>
+        <label>Iterationen</label>
+        <input type="text" id="num_iterations">
+    </div>
+    <p></p>
+    <button id="btn-add-new-row" onclick=addNewRow()>Zeile hinzufügen</button>
+    <button id="btn-calculate" onclick=calculateDistribution()>Berechne Verteilung</button>
+    <button id="btn-test-entries" onclick=loadTestData()>Beispiel</button>
+    <button id="btn-delete-all-entries" onclick=deleteAllEntries()>Alles löschen</button>
+    <p></p>
+    <table id="investment-table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Startwert</th>
+            <th>Zielallokation [%]</th>
+            <th>Neuinvestition</th>
+            <th>Endwert</th>
+          </tr>
+        </thead>
+        <tbody id="investment-table-body">
+        </tbody>
+      </table>
+      <p></p>
+</body>
+</html>
