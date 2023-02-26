@@ -23,14 +23,12 @@
       </tr>
     </table>
     <p></p>
-    <button id="btn-add-new-row" onclick=addNewRow()>Zeile hinzufügen</button>
     <button id="btn-calculate" onclick=calculateDistribution()>Berechne Verteilung</button>
-    <button id="btn-test-entries" onclick=loadTestData()>Beispiel</button>
-    <button id="btn-delete-all-entries" onclick=deleteAllEntries()>Alles löschen</button>
-    <button id="btn-delete-all-entries" onclick=donwloadCurrentData()>Werte als .txt sichern</button>
-    <button id="btn-delete-all-entries" onclick=loadDataFromBackup()>Werte von .txt laden</button>
+    <button id="btn-save-as-txt" onclick=donwloadCurrentData()>Werte als .txt sichern</button>
+    <button id="btn-load-from-txt" onclick=loadDataFromBackup()>Werte von .txt laden</button>
     <p></p>
-    <table id="investment-table">
+    <div style="overflow-x:auto;">
+      <table id="investment-table">
         <thead>
           <tr>
             <th>ID</th>
@@ -54,6 +52,10 @@
           </tr>
         </tfoot>
       </table>
-      <p></p>
+    </div>
+    <p></p>
+    <button id="btn-add-new-row" onclick=addNewRow()>Zeile hinzufügen</button>
+    <button id="btn-test-entries" onclick=loadTestData()>Beispieldaten laden</button>
+    <button id="btn-delete-all-entries" onclick=deleteAllEntries()>Alle Zeilen löschen</button>
 </body>
 </html>
