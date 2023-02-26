@@ -51,6 +51,28 @@ button:hover {
     border-bottom: 2px solid #009879;
 }
 
+#investment-table tr th:nth-child(1),
+#investment-table tr td:nth-child(1),
+#investment-table tr th:nth-child(3),
+#investment-table tr td:nth-child(3),
+#investment-table tr th:nth-child(4),
+#investment-table tr td:nth-child(4),
+#investment-table tr th:nth-child(5),
+#investment-table tr td:nth-child(5),
+#investment-table tr th:nth-child(6),
+#investment-table tr td:nth-child(6) {
+  text-align: right;
+}
+
+#investment-table tr td:nth-child(3) input[type="text"],
+#investment-table tr td:nth-child(4) input[type="text"] {
+  text-align: right;
+}
+
+tfoot {
+    font-weight: bold;
+  }
+
 
 
 #input-table {

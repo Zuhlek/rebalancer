@@ -27,11 +27,14 @@
     <button id="btn-calculate" onclick=calculateDistribution()>Berechne Verteilung</button>
     <button id="btn-test-entries" onclick=loadTestData()>Beispiel</button>
     <button id="btn-delete-all-entries" onclick=deleteAllEntries()>Alles löschen</button>
+    <button id="btn-delete-all-entries" onclick=donwloadCurrentData()>Werte als .txt sichern</button>
+    <button id="btn-delete-all-entries" onclick=loadDataFromBackup()>Werte von .txt laden</button>
     <p></p>
     <table id="investment-table">
         <thead>
           <tr>
             <th>ID</th>
+            <th>Bezeichnung/ISBN</th>
             <th>Startwert</th>
             <th>Zielallokation [%]</th>
             <th>Neuinvestition</th>
@@ -40,6 +43,16 @@
         </thead>
         <tbody id="investment-table-body">
         </tbody>
+        <tfoot id="investment-table-foot">
+          <tr>
+            <td>Total</td>
+            <td></td>
+            <td id="investment-table-foot-start-col"></td>
+            <td id="investment-table-foot-target-col"></td>
+            <td id="investment-table-foot-investment-col"></td>
+            <td id="investment-table-foot-end-col"></td>
+          </tr>
+        </tfoot>
       </table>
       <p></p>
 </body>
