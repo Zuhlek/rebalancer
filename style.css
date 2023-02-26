@@ -4,15 +4,14 @@ h1 {
 }
 
 button {
-    background-color: #009879; /* Green */
+    background-color: #474747; /* Green */
     border: none;
     color: white;
-    padding: 15px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    border-radius: 12px;
-    font-size: 16px;
+
+    font-size: 18px;
     transition-duration: 0.4s;
 }
 
@@ -26,7 +25,6 @@ button:hover {
     font-size: 0.9em;
     font-family: sans-serif;
     margin: 25px 0;
-    min-width: 870px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 
@@ -60,7 +58,6 @@ button:hover {
     margin: 25px 0;
     font-size: 0.9em;
     font-family: sans-serif;
-    min-width: 400px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 
