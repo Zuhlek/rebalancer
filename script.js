@@ -264,8 +264,6 @@ function loadDataFromBackup() {
     reader.onload = function(event) {
       const jsonDaten = event.target.result;
       try {
-        // Entferne zusätzliche Escape-Zeichen, falls vorhanden
-        const cleanedData = jsonDaten.replace(/\\"/g, '"');
         // Lade die Daten in die Tabelle
         loadFromJSON(cleanedData);
       } catch (e) {
