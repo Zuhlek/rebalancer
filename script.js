@@ -1,13 +1,14 @@
 let numIterations
 let newInvestment
 let startValues = [];
+
 let targetAllocation = [];
 
 
 function addNewRow(startValue = 0, targetAllocation = 0) {
     const table = document.getElementById('investment-table-body');
     const newRow = table.insertRow(-1);
-    const id = table.rows.length - 1;
+    const id = table.rows.length;
   
     const idCell = newRow.insertCell(0);
     idCell.innerHTML = id;
@@ -41,7 +42,7 @@ function readInputs() {
 
     const table = document.getElementById('investment-table-body');
     const numRows = table.rows.length;
-    for (let i = 1; i < numRows; i++) {
+    for (let i = 0; i < numRows; i++) {
         const targetCell = table.rows[i].cells[2];
         const currentCell = table.rows[i].cells[1];
 
@@ -82,11 +83,11 @@ function updateTable() {
     const proposedAllocation = distributeInvestment(targetAllocation, startValues, newInvestment, numIterations);
     const table = document.getElementById('investment-table-body');
     const numRows = table.rows.length;
-    for (let i = 1; i < numRows; i++) {
+    for (let i = 0; i < numRows; i++) {
       if (i <= proposedAllocation.length) {
-        const toBeInvested = proposedAllocation[i - 1];
+        const toBeInvested = proposedAllocation[i];
         table.rows[i].cells[3].innerHTML = toBeInvested.toFixed(2);
-        table.rows[i].cells[4].innerHTML = (startValues[i - 1] + toBeInvested).toFixed(5);
+        table.rows[i].cells[4].innerHTML = (startValues[i] + toBeInvested).toFixed(5);
       }
     }
   }
