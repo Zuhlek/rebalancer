@@ -10,15 +10,18 @@
 </head>
 <body>
     <h1>Rebalancing Rechner</h1>
-    <p>Definiere alle deinen Positionen in der Tabelle. </p>
-    <div>
-        <label>Neuinvestition</label>
-        <input type="text" id="new_investment">
-    </div>
-    <div>
-        <label>Iterationen</label>
-        <input type="text" id="num_iterations">
-    </div>
+    <table id="input-table">
+      <tr>
+        <td><label>Geplante Neuinvestition</label></td>
+        <td><input type="text" id="new_investment"></td>
+        <td><label>(Wird auf die verschiedenen Positionen gemäss Planallokation verteilt)</label></td>
+      </tr>
+      <tr>
+        <td><label>Iterationen</label></td>
+        <td><input type="text" id="num_iterations"></td>
+        <td><label>(Default = 100)</label></td>
+      </tr>
+    </table>
     <p></p>
     <button id="btn-add-new-row" onclick=addNewRow()>Zeile hinzufügen</button>
     <button id="btn-calculate" onclick=calculateDistribution()>Berechne Verteilung</button>

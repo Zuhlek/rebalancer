@@ -1,0 +1,74 @@
+h1 {
+    font-size: 3em;
+    font-family: sans-serif;
+}
+
+button {
+    background-color: #009879; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 12px;
+    font-size: 16px;
+    transition-duration: 0.4s;
+}
+
+button:hover {
+    background-color: #9ab39b; /* Green */
+    color: white;
+}
+
+#investment-table {
+    border-collapse: collapse;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    margin: 25px 0;
+    min-width: 870px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+#investment-table thead tr{
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+}
+
+#investment-table th,
+#investment-table td {
+    padding: 12px 15px;
+}
+
+#investment-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+#investment-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+#investment-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+
+
+#input-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+#input-table th,
+#input-table td {
+    padding: 12px 15px;
+}
+
+#input-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
