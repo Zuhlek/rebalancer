@@ -265,7 +265,7 @@ function loadDataFromBackup() {
       const jsonDaten = event.target.result;
       try {
         // Lade die Daten in die Tabelle
-        loadFromJSON(cleanedData);
+        loadFromJSON(jsonDaten);
       } catch (e) {
         alert("Fehler beim Laden der Backup-Datei: " + e.message);
       }
