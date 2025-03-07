@@ -1,54 +1,20 @@
-# React + TypeScript + Vite
+# rebalancer
+The site is live at: https://zuhlek.github.io/RebalancingTool/
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This rebalancing tool helps calculate the necessary investments required to achieve your target allocation in your portfolio.
 
-Currently, two official plugins are available:
+I use this tool for my annual rebalancing of my ETF world portfolio. It's pretty simple, and I thought others might be interested in using it as well.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# How to Use It
+1. Add rows for each new portfolio item and specify the details.
+2. Assign the target allocation based on your investment plan.
+3. Once all required items are set, enter the new planned investment amount at the top.
+4. Hit 'Calculate' to see the required investment for each item.
 
-## Expanding the ESLint configuration
+# Storage Option as .txt
+You can download your current portfolio items as a simple .txt file and upload it later for reuse. This way, you won't have to manually create all items every time.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+# Contribution
+I never planned to make this repository/application public, but here we are. Unfortunately, the terminology is not in English, and the layout is also quite unorganized. In the end, it does its job. Nevertheless, feel free to clone, fork, or contribute with pull requests as you see fit :)
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+Cheers
