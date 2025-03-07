@@ -1,4 +1,4 @@
-# RebalancingTool
+# rebalancer
 The site is live at: https://zuhlek.github.io/RebalancingTool/
 
 This rebalancing tool helps calculate the necessary investments required to achieve your target allocation in your portfolio.
