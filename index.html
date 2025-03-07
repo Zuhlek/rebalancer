@@ -1,61 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Rebalancing Rechner</h1>
-    <table id="input-table">
-      <tr>
-        <td><label>Geplante Neuinvestition</label></td>
-        <td><input type="text" id="new_investment"></td>
-        <td><label>(Wird auf die verschiedenen Positionen gemäss Planallokation verteilt)</label></td>
-      </tr>
-      <tr>
-        <td><label>Iterationen</label></td>
-        <td><input type="text" id="num_iterations"></td>
-        <td><label>(Default = 100)</label></td>
-      </tr>
-    </table>
-    <p></p>
-    <button id="btn-calculate" onclick=calculateDistribution()>Berechne Verteilung</button>
-    <button id="btn-save-as-txt" onclick=donwloadCurrentData()>Werte als .txt sichern</button>
-    <button id="btn-load-from-txt" onclick=loadDataFromBackup()>Werte von .txt laden</button>
-    <p></p>
-    <div style="overflow-x:auto;">
-      <table id="investment-table">
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th>Bezeichnung/ISBN</th>
-            <th>Startwert</th>
-            <th>Zielallokation [%]</th>
-            <th>Neuinvestition</th>
-            <th>Endwert</th>
-          </tr>
-        </thead>
-        <tbody id="investment-table-body">
-        </tbody>
-        <tfoot id="investment-table-foot">
-          <tr>
-            <td>Total</td>
-            <td></td>
-            <td id="investment-table-foot-start-col"></td>
-            <td id="investment-table-foot-target-col"></td>
-            <td id="investment-table-foot-investment-col"></td>
-            <td id="investment-table-foot-end-col"></td>
-          </tr>
-        </tfoot>
-      </table>
-    </div>
-    <p></p>
-    <button id="btn-add-new-row" onclick=addNewRow()>Zeile hinzufügen</button>
-    <button id="btn-test-entries" onclick=loadTestData()>Beispieldaten laden</button>
-    <button id="btn-delete-all-entries" onclick=deleteAllEntries()>Alle Zeilen löschen</button>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React + TS</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
